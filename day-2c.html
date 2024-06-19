@@ -13,10 +13,20 @@
   <h3>You Try it!</h3>
   <p>Ask the user two questions using propmt. Then give the user a personalized response using the data entered.</p>
   <script>
+    let userName;
+    let photoDate;
+    let sessionType;
 
-
+    userName = prompt("What is your name?");
+    photoDate = prompt("What date would you like to shoot?");
+    sessionType = prompt("what type of session would you like to shoot?");
 
   </script>
+  <p>
+    <script>
+      document.write(`Hi ${userName}!  Thank you for your interest in our services.  We are available to shoot your ${sessionType} on ${photoDate}!  We look forward to seeing you on ${photoDate}!`);
+    </script>
+  </p>
 
 </body>
 
